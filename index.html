@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Erick R. Ramirez</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#Certificaciones" onclick="seleccionar()">CERTIFICADOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/FotoPerfil.jpg" alt="">
+            </div>
+            <h1>Erick R. Ramirez</h1>
+            <h2>Estudiante de Ingenieria en Ciencias de la Computacion</h2><br>
+            <h3>Objetivo</h3>
+            <p>Desarrollarme profesionalmente en un entorno dinámico, aplicando mis conocimientos como ingeniero para optimizar procesos y desarrollar soluciones tecnológicas innovadoras. Estoy interesado en colaborar en proyectos remotos que promuevan la eficiencia y la innovación, mientras continúo aprendiendo y aportando valor dentro de un equipo profesional.</p>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Erick Raul Ramirez Rodriguez.</span> <br>
+                Soy estudiante universitario de la carrera de Ingeniería en Ciencias de la Computación, actualmente cursando el cuarto año en la Universidad Católica de Honduras.
+                Me considero una persona con alta capacidad para aprender y aplicar mis conocimientos en el ámbito profesional. Tengo habilidades tanto para trabajar en equipo como de manera independiente, adaptándome a las necesidades del entorno. Cuento con experiencia en el mantenimiento de equipos de cómputo, así como en la solución de posibles incidencias técnicas.
+                Durante mi formación académica, he adquirido sólidos conocimientos en programación, desarrollo de software, tecnologías de la información y gestión de proyectos. Además, he desarrollado competencias en la integración de sistemas eléctricos con soluciones tecnológicas innovadoras, lo que me ha permitido abordar problemas de manera integral y eficiente.
+                Busco seguir creciendo profesionalmente, aplicando mis habilidades y conocimientos para contribuir al desarrollo de proyectos tecnológicos que generen impacto positivo en la sociedad
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +504 99468653
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            erickraulrodriguez1104@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/EriRRR">https://github.com/EriRRR</a>
+                        </li>
+                        <li>
+                            <strong>Linkedin:</strong>
+                            <a href="https://www.linkedin.com/in/erick-r-ramirez/">https://www.linkedin.com/in/erick-r-ramirez/</a>
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Choluteca, Choluteca, Honduras
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Peliculas</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paquete Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profecionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachillerato técnico Profesional en Informática</h4>
+                        <span class="casa">Institución Brigada de Amor Cristiano</span>
+                        <span class="fecha">2021</span>
+                        <p>Graduado con honores y notas de excelencia académica.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería en Ciencias de la Computación</h4>
+                        <span class="casa">Universidad Católica de Honduras</span>
+                        <span class="fecha">2022-01 - actualmente</span>
+                        <p>Estudiante universitario de la carrera de Ingeniería en Ciencias de la Computación, actualmente cursando el cuarto año.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Práctica Profesional</h4>
+                        <span class="casa">Empacadora Deli</span>
+                        <span class="fecha">Noviembre 2021</span>
+                        <li>Escaneo e impresión de documentos</li>
+                        <li>Auxiliar de gerencia de operaciones</li>
+                        <li>Ordenamiento y manejo de documentación</li>
+                        <li>Realizar Informe de operaciones de producción durante el mes</li>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tutor Independiente de Informática Basica</h4>
+                        <span class="casa">Freelanser</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Dar clase de tutoría sobre los paquetes de office, reparación tanto de hardware como de software de dispositivos de cómputo, instalación de drivers y sistemas operativos, reforzamiento de lenguajes de programación</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Vendedor</h4>
+                        <span class="casa">Valentina's Store</span>
+                        <span class="fecha">Disiembre 2021 - actualmente</span>
+                        <li>Gestión de almacén, reposición de productos.</li>
+                        <li>Venta al público de todo tipo de productos.</li>
+                        <li>Empleó los conocimientos sobre productos, las habilidades de ventas y la interacción con los clientes para impulsar las ventas de todo tipo de productos</li>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION Certificaciones -->
+    <section id="Certificaciones" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Certificación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Word básico</h4>
+                        <span class="casa">Instituto Nacional De Formación Profesiona</span>
+                        <span class="fecha">2021</span>
+                        <p>Certificación en Word básico por Instituto Nacional De Formación Profesiona</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Excel Básico</h4>
+                        <span class="casa">LFNAI</span>
+                        <span class="fecha">2022-09</span>
+                        <p>Certificación en Excel básico por LFNAI</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Basic Concepts of Computer Science</h4>
+                        <span class="casa">CODE</span>
+                        <span class="fecha">2022</span>
+                        <p>certificado en basic concepts of Computer Science.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Certificación en Ciberseguridad en el Teletrabajo </h4>
+                        <span class="casa">Google - incibe</span>
+                        <span class="fecha">2021</span>
+                        <p>Certificación en Ciberseguridad en el Teletrabajo por Instituto Nacional de Ciberseguridad de España</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Introducción a la Seguridad Cibernético</h4>
+                        <span class="casa">Cisco Networking Academy® - Universidad Nacional Autónoma de Honduras</span>
+                        <span class="fecha">2020</span>
+                        <p>Certificación en Introducción a la Seguridad Cibernético por Cisco Networking Academy® y Universidad Nacional Autónoma de Honduras</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <H1>Contacto</H1>
+        <ul>
+            <li>
+                <strong>Teléfono:</strong>
+                +504 99468653
+            </li>
+            <li>
+                <strong>Email:</strong>
+                erickraulrodriguez1104@gmail.com
+            </li>
+            <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/EriRRR">https://github.com/EriRRR</a>
+            </li>
+            <li>
+                <strong>Linkedin:</strong>
+                <a href="https://www.linkedin.com/in/erick-r-ramirez/">https://www.linkedin.com/in/erick-r-ramirez/</a>
+            </li>
+            <li>
+                <strong>Dirección:</strong>
+                Choluteca, Choluteca, Honduras
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
